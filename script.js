@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
 	const dateObjects = dates.map(dateString => new Date(dateString));
-	const minDate = dateObjects.reduce(min, date) => (date<min ? date : min;) , dateObjects[0]);
+	const minDate = dateObjects.reduce((min, date) => (date < min ? date : min), dateObjects[0]);
 	const minDateString = `${minDate.getFullYear()}/ ${minDate.getMonth() + 1}/${minDate.getDate()}`;
 	return minDateString;
 }
