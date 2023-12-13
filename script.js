@@ -1,14 +1,3 @@
-function minDate(dates) {
-  //write you code here
-	const dateObjects = dates.map(dateString => new Date(dateString));
-	const minDate = dateObjects.reduce((min, date) => (date < min ? date : min), dateObjects[0]);
-	const minDateString = `${minDate.getFullYear()}/ ${minDate.getMonth() + 1}/${minDate.getDate()}`;
-	return minDateString;
-}
-const result = minDate(dates);
-console.log(result);
-// Do not change the code
-
 var dates = [
   "2023/03/01",
   "2023/03/02",
@@ -43,3 +32,15 @@ var dates = [
 ];
 
 alert(minDate(dates));
+function minDate(dates) {
+  //write you code here
+	const dateObjects = dates.map(dateString => new Date(dateString));
+	const minDate = dateObjects.reduce((min, date) => (date < min ? date : min), dateObjects[0]);
+	const minDateString = `${minDate.getFullYear()}/ ${minDate.getMonth() + 1}/${minDate.getDate()}`;
+	return minDateString;
+}
+const result = minDate(dates);
+console.log(result);
+// Do not change the code
+
+
